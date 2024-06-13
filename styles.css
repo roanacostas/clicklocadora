@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #132540;
+    color: #ffffff;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #ffffff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+a {
+    color: #ff8e00;
+}
+
+h2 {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.logo-home {
+    width: 150px;
+    height: 150px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+.services {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-color: #fff9f2;
+}
+
+h1 {
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.produtos {
+    background-color: #fff9f2;
+}
+
+.secao-produtos {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.services {
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card {
+    background-color: #132540;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+.service-card button {
+    background-color: #ff8e00;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.img-produtos {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+
+.descricao {
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.contato {
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+    padding: 20px;
+    background-color: #132540;
+    color: #ffffff;
+}
+.contact-info {
+    flex: 1;
+    padding-right: 20px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.map {
+    flex: 1;
+}
+footer {
+    background-color: #132540;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #ff8e00;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .services {
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+
+    .contact {
+        display: block;
+    }
+
+
+    
+}
